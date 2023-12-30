@@ -1,8 +1,5 @@
-// contactus.tsx
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 
 const ContactUs = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -18,7 +15,7 @@ const ContactUs = () => {
     };
 
     try {
-      const response = await fetch('http://your-backend-url/api/send_email/', {
+      const response = await fetch('http://127.0.0.1:8000/api/store_message/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -29,10 +26,10 @@ const ContactUs = () => {
       if (response.ok) {
         setSubmitted(true);
       } else {
-        // Handle errors
+        console.error('Server-side error occurred');
       }
     } catch (error) {
-      // Handle network errors
+      console.error('Network or other runtime error occurred', error);
     }
   };
 
@@ -66,7 +63,7 @@ const ContactUs = () => {
           <h1>Contact Us</h1>
           <p>
             Got a question or feedback? We'd love to hear from you. Send us a
-            message and we'll respond as soon as possible
+            message and we'll respond as soon as possible.
           </p>
           {!submitted ? (
             <form onSubmit={handleSubmit}>
@@ -82,12 +79,7 @@ const ContactUs = () => {
 
               <div className="form-group">
                 <label htmlFor="your_message">Your Message/Feedback:</label>
-                <textarea
-                  id="your_message"
-                  name="your_message"
-                  rows={15}
-                  required
-                ></textarea>
+                <textarea id="your_message" name="your_message" rows={15} required></textarea>
               </div>
 
               <div className="form-group">
