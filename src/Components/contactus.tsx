@@ -7,10 +7,33 @@ import { Link } from 'react-router-dom';
 const ContactUs = () => {
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    setSubmitted(true);
+    const formData = new FormData(event.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('your_message')
+    };
+
+    try {
+      const response = await fetch('http://your-backend-url/api/send_email/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        // Handle errors
+      }
+    } catch (error) {
+      // Handle network errors
+    }
   };
 
   return (
@@ -81,7 +104,7 @@ const ContactUs = () => {
 
       <footer>
         <div className="footer-content">
-        <ul>
+          <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
