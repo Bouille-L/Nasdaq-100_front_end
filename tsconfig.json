@@ -5,13 +5,15 @@
     "types": [
       "jest",
       "node",
-      "react-router-dom",
-      "@types/jest-dom"
+      "react-router-dom"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
     ],
     "lib": [
       "DOM",
       "DOM.Iterable",
-      "ESNext",
+      "ESNext"
     ],
     "allowJs": false,
     "skipLibCheck": true,
@@ -27,7 +29,7 @@
     "jsx": "react"
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
   "references": [
     {
