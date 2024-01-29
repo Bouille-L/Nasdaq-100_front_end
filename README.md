@@ -49,8 +49,8 @@ To review the UML component diagram, please visit the following repository : htt
                                                                                     
 
 
-# Installation Instructions: to install and set up this fron end locally, you need:
-This guide will help you set up and run Nasdaq-100 ETF Explorer Front end on your local machine for development and testing purposes.
+# Installation Instructions: 
+This guide will help you set up and run Nasdaq-100 ETF Explorer Front end on your local machine for development and testing purposes.to install and set up this fron end locally, you need:
 
 ## Prerequisites
 Before beginning, ensure you have the following installed:
