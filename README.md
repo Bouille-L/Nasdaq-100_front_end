@@ -30,18 +30,18 @@ In this repository, you'll find the frontend of the Nasdaq-100 ETF Explorer Appl
 ## Overview of system Component in Frontend (React.js) :
 This section provides an overview of all components of the front end of the  NASDAQ-100 ETF Explorer web application, each playing a specific role in the application's functionality.
 Frontend (ReactJS): Responsible for presenting the user interface, it handles user interactions and displays data fetched from the backend and below its components:
-•	Home.tsx : this is main landing page and it will display ChartTQQQ, ChartQQQ, ChartSQQQ and News component plus header and footer
-•	Aboutus.tsx: display information about the teams and web application 
-•	Etf_Information.tsx: Displays detailed information about various NASDAQ-100 ETFs.
-•	Educational_Resources.tsx: Offers educational material and resources for new investors.
-•	Contactus.tsx : A contact form for user inquiries.
-•	ChartQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the QQQ ETF Price 
-•	ChartTQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the TQQQ ETF Price 
-•	ChartSQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the SQQQ ETF Price 
-•	News.tsx : it fetch news and  display the latest market news and updates relevant to NASDAQ-100 ETFs.
-•	App.tsx : serves as the root component in the React application for the NASDAQ-100 ETF Explorer. It is the main entry point for the application's user interface and is responsible for defining the routing structure.
-•	NotFound.tsx : Displayed when a user navigates to an undefined route or a non-existent page.
-•	PublicFolder : Contains static assets like images, fonts, and external scripts used in the application.
+* Home.tsx : this is main landing page and it will display ChartTQQQ, ChartQQQ, ChartSQQQ and News component plus header and footer
+* Aboutus.tsx: display information about the teams and web application 
+* Etf_Information.tsx: Displays detailed information about various NASDAQ-100 ETFs.
+* Educational_Resources.tsx: Offers educational material and resources for new investors.
+* Contactus.tsx : A contact form for user inquiries.
+* ChartQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the QQQ ETF Price 
+* ChartTQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the TQQQ ETF Price 
+* ChartSQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the SQQQ ETF Price 
+* News.tsx : it fetch news and  display the latest market news and updates relevant to NASDAQ-100 ETFs.
+* App.tsx : serves as the root component in the React application for the NASDAQ-100 ETF Explorer. It is the main entry point for the application's user interface and is responsible for defining the routing structure.
+* NotFound.tsx : Displayed when a user navigates to an undefined route or a non-existent page.
+* PublicFolder : Contains static assets like images, fonts, and external scripts used in the application.
 
 ## UML Component Diagram : 
 To review the UML component diagram, please visit the following repository : https://github.com/Bouille-L/Web-App-UML-Diagram.git
@@ -76,18 +76,18 @@ To start the application on your local machine:
 
 ```npm run dev```
 
-This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via [(http://localhost:5173/)].
+This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via http://localhost:5173/
 
 ## Key Dependencies
-The project uses key dependencies, including:
-React (react, react-dom)
-React Testing Libraries (@testing-library/react, @testing-library/jest-dom, etc.)
-TypeScript for type-checking (typescript)
-Babel for compiling JSX and ES6 (@babel/core, @babel/preset-env, etc.)
-Axios for making HTTP requests (axios)
-React Router for navigation (react-router-dom)
-Chart.js for data visualization (chart.js, react-chartjs-2)
-Cypress for end-to-end testing (cypress)
+* The project uses key dependencies, including:
+* React (react, react-dom)
+* React Testing Libraries (@testing-library/react, @testing-library/jest-dom, etc.)
+* TypeScript for type-checking (typescript)
+* Babel for compiling JSX and ES6 (@babel/core, @babel/preset-env, etc.)
+* Axios for making HTTP requests (axios)
+* React Router for navigation (react-router-dom)
+* Chart.js for data visualization (chart.js, react-chartjs-2)
+* Cypress for end-to-end testing (cypress)
 Ensure that these dependencies are properly installed for the application to function correctly.
 
 ## Troubleshooting:
