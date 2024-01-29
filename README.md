@@ -1,5 +1,5 @@
 # Nasdaq-100_front_end
-1.	Objective:
+##Objective:
 The objective of this project is to develop a web application that provides users with comprehensive information and interactive charts for Nasdaq-100 ETF (TQQQ, QQQ, SQQQ). The application will empower users to make informed investment decisions and track ETF performance.
 
 The project includes the development of a user-friendly web application that aggregates and displays real-time data, interactive charts, news, and educational content related to Nasdaq-100 ETFs (TQQQ, QQQ, NASDAQ-100, SQQQ).
@@ -7,10 +7,10 @@ Exclusions: The project does not cover the development of a mobile application o
 
 Such an application can provide significant value to investors, traders, and anyone interested in the Nasdaq-100 index and its constituent ETFs (TQQQ, QQQ, NASDAQ-100, SQQQ).  It can help users make informed investment decisions and track the performance of these ETFs. While there are existing financial data platforms, creating a new, user-friendly, and innovative interface that specifically focuses on Nasdaq-100 ETFs can offer a unique perspective and features, setting it apart from generic financial websites.
                                                                                            
-                                                                                           *********************************************
+                                                                                          
                                                                                            
                                                                                            
-2. Architectural Principles and Approach:
+##Architectural Principles and Approach:
 Design Philosophy: The architecture is crafted with an emphasis on modularity, scalability, and responsiveness, aiming to deliver a smooth user experience when accessing financial data.
 
 Architectural Style: The application embraces a client-server model, ensuring a distinct separation between the backend (utilizing Django REST) and the frontend (powered by ReactJS).
@@ -21,13 +21,13 @@ Frameworks and Technologies:
 
 High-Level Structure: The backend is tasked with handling API calls, data processing, and storage operations (such as archiving user messages). The frontend is designed to effectively display data through both static and dynamic components.
 
-                                                                                           *********************************************
+                                                                                        
 
-3. Nasdaq-100_front_end Folder :
-3.1. Introduction :
-   In this repository, you'll find the frontend of the Nasdaq-100 ETF Explorer Application. Our frontend is built using React.js, chosen for its component-based architecture. React.js's ability to manage stateful components and efficiently update the DOM makes it ideal for creating dynamic views, such as real-time stock charts and news updates. We utilize HTTP requests to retrieve stock data and market news from the Django backend, facilitating front-end to back-end communication. Finally, we've integrated Chart.js for its simplicity and effectiveness in creating interactive charts, crucial for representing financial data of TQQQ, SQQQ, and QQQ ETFs.
+#Nasdaq-100_front_end Folder :
+##Introduction :
+In this repository, you'll find the frontend of the Nasdaq-100 ETF Explorer Application. Our frontend is built using React.js, chosen for its component-based architecture. React.js's ability to manage stateful components and efficiently update the DOM makes it ideal for creating dynamic views, such as real-time stock charts and news updates. We utilize HTTP requests to retrieve stock data and market news from the Django backend, facilitating front-end to back-end communication. Finally, we've integrated Chart.js for its simplicity and effectiveness in creating interactive charts, crucial for representing financial data of TQQQ, SQQQ, and QQQ ETFs.
 
-3.2. Overview of system Component in Frontend (React.js) :
+##Overview of system Component in Frontend (React.js) :
 This section provides an overview of all components of the front end of the  NASDAQ-100 ETF Explorer web application, each playing a specific role in the application's functionality.
 Frontend (ReactJS): Responsible for presenting the user interface, it handles user interactions and displays data fetched from the backend and below its components:
 •	Home.tsx : this is main landing page and it will display ChartTQQQ, ChartQQQ, ChartSQQQ and News component plus header and footer
@@ -43,21 +43,21 @@ Frontend (ReactJS): Responsible for presenting the user interface, it handles us
 •	NotFound.tsx : Displayed when a user navigates to an undefined route or a non-existent page.
 •	PublicFolder : Contains static assets like images, fonts, and external scripts used in the application.
 
-3.3 UML Component Diagram : 
+##UML Component Diagram : 
 To review the UML component diagram, please visit the following repository : https://github.com/Bouille-L/Web-App-UML-Diagram.git
 
-                                                                                         *********************************************
+                                                                                    
 
 
-4. Installation Instructions: to install and set up this fron end locally, you need:
+#Installation Instructions: to install and set up this fron end locally, you need:
 This guide will help you set up and run Nasdaq-100 ETF Explorer Front end on your local machine for development and testing purposes.
 
-## Prerequisites
+##Prerequisites
 Before beginning, ensure you have the following installed:
 - Node.js (latest stable version is recommended)
 - npm (usually comes with Node.js)
 
-## Cloning the Repository
+##Cloning the Repository
 First, clone the project repository to your local machine:
 git clone https://github.com/Bouille-L/Nasdaq-100_front_end.git
 cd Nasdaq-100_front_end
@@ -87,7 +87,7 @@ If, when you open the front end in your web browser, the Home page displays the 
 
 ##For further questions or contributions, feel free to contact me via Github Channel.
 
-                                                                                                            *********************************************
+                                                                                                   
 
 
 
