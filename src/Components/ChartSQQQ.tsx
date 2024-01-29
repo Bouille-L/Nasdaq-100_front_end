@@ -11,7 +11,7 @@ interface ChartData {
     '5. volume': string;
   };
 }
-const ChartTQQQ: React.FC = () => {
+const ChartSQQQ: React.FC = () => {
   const [chartData, setChartData] = useState<ChartData | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
@@ -20,7 +20,7 @@ const ChartTQQQ: React.FC = () => {
   const fetchChartData = async (range: string) => {
     setLoading(true);
     try {
-      let apiUrl = 'http://127.0.0.1:8000/api/TQQQ/';
+      let apiUrl = 'http://127.0.0.1:8000/api/SQQQ/';
 
       const timeZone = 'America/New_York'; // Specify the desired time zone consistently
 
@@ -159,7 +159,7 @@ const ChartTQQQ: React.FC = () => {
         <button onClick={() => handleButtonClick('1d')}>Day</button>
         <button onClick={() => handleButtonClick('all')}>Month</button>
       </div>
-      <h1>TQQQ</h1>
+      <h1>SQQQ</h1>
       <h3>
         Current Stock Price: {latestStockPrice ? latestStockPrice.toFixed(2) : 'N/A'}
       </h3>
@@ -168,4 +168,4 @@ const ChartTQQQ: React.FC = () => {
   );
 };
 
-export default ChartTQQQ;
+export default ChartSQQQ;

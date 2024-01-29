@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import News from './news'; '; // Replace with the correct path to your News component';
+import News from './news';
 import ChartTQQQ from './ChartTQQQ';
+import ChartQQQ from './ChartQQQ';
+import ChartSQQQ from './ChartSQQQ';
 
 const Home = () => {
   return (
@@ -30,7 +32,9 @@ const Home = () => {
       </header>
 
       <main>
+        <ChartQQQ />
         <ChartTQQQ />
+        <ChartSQQQ />
         <News />
       </main>
 
