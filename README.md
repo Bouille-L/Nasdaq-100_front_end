@@ -76,7 +76,7 @@ To start the application on your local machine:
 
 ```npm run dev```
 
-This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via [http://localhost:3000 ](http://localhost:5173/)
+This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via [(http://localhost:5173/)].
 
 ## Key Dependencies
 The project uses key dependencies, including:
