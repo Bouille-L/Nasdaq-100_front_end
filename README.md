@@ -59,15 +59,23 @@ Before beginning, ensure you have the following installed:
 
 ## Cloning the Repository
 First, clone the project repository to your local machine:
-git clone https://github.com/Bouille-L/Nasdaq-100_front_end.git
-cd Nasdaq-100_front_end
+
+```git clone https://github.com/Bouille-L/Nasdaq-100_front_end.git```
+
+```cd Nasdaq-100_front_end```
 
 ## Installing Dependencies
-The project uses several npm packages. Install them by running: npm install
+The project uses several npm packages. Install them by running: 
+
+```npm install```
+
 This command will install all necessary dependencies as specified in the package.json file.
 
 ## Running the Application
-To start the application on your local machine: npm run dev
+To start the application on your local machine: 
+
+```npm run dev```
+
 This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via [http://localhost:3000 ](http://localhost:5173/)
 
 ## Key Dependencies
