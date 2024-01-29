@@ -1,34 +1,94 @@
 # Nasdaq-100_front_end
 1.	Objective:
-The objective of this project is to develop a web application that provides users with comprehensive information and interactive charts for Nasdaq-100 ETF (TQQQ, QQQ, NASDAQ-100, SQQQ). The application will empower users to make informed investment decisions and track ETF performance.
+The objective of this project is to develop a web application that provides users with comprehensive information and interactive charts for Nasdaq-100 ETF (TQQQ, QQQ, SQQQ). The application will empower users to make informed investment decisions and track ETF performance.
 
-2. Scope:
 The project includes the development of a user-friendly web application that aggregates and displays real-time data, interactive charts, news, and educational content related to Nasdaq-100 ETFs (TQQQ, QQQ, NASDAQ-100, SQQQ).
 Exclusions: The project does not cover the development of a mobile application or trading functionality.
 
-3.	Target Group & Customer Value:
 Such an application can provide significant value to investors, traders, and anyone interested in the Nasdaq-100 index and its constituent ETFs (TQQQ, QQQ, NASDAQ-100, SQQQ).  It can help users make informed investment decisions and track the performance of these ETFs. While there are existing financial data platforms, creating a new, user-friendly, and innovative interface that specifically focuses on Nasdaq-100 ETFs can offer a unique perspective and features, setting it apart from generic financial websites.
+                                                                                           
+                                                                                           *********************************************
+                                                                                           
+                                                                                           
+2. Architectural Principles and Approach:
+Design Philosophy: The architecture is crafted with an emphasis on modularity, scalability, and responsiveness, aiming to deliver a smooth user experience when accessing financial data.
 
-4. Installation Instructions: If your project requires installation, provide a step-by-step guide. Include commands in a formatted text block.
+Architectural Style: The application embraces a client-server model, ensuring a distinct separation between the backend (utilizing Django REST) and the frontend (powered by ReactJS).
+Frameworks and Technologies:
+- Django REST Framework: Selected for its effectiveness and robustness in managing RESTful API services, which are essential for delivering real-time financial data.
+- ReactJS: Chosen for the frontend development to facilitate a dynamic and interactive user interface. Its component-based structure enables efficient updates and the rendering of dynamic elements, such as charts and news feeds.
+- Chart.js: Employed to provide interactive and responsive chart visualizations, significantly enhancing the data presentation capabilities of the application.
 
-5. Usage: Explain how to use your project. Include examples of the project in action.
+High-Level Structure: The backend is tasked with handling API calls, data processing, and storage operations (such as archiving user messages). The frontend is designed to effectively display data through both static and dynamic components.
 
-6. Features: List the features of this project. 
-	Feature 1: Comprehensive ETF Information:  Provide detailed information about each Nasdaq-100 ETF(TQQQ, QQQ, NASDAQ-100, SQQQ), including its name, ticker symbol, expense ratio, assets under management (AUM), and sector allocation.
-	Feature 2: Real-Time Data Updates: Offer real-time or near-real-time data updates for ETF prices, NAV (Net Asset Value), and other relevant financial metrics.
-	Feature 3: Interactive Charts: Display interactive charts that allow users to track historical performance, compare multiple ETFs, and apply technical analysis indicators.
-	Feature 4: News and Announcements:  Integrate news feeds and announcements related to the Nasdaq-100 index and its constituent ETFs.
-	Feature 5: Educational Resources: Include educational content such as articles, videos, and tutorials on ETF investing and market analysis.
-	Feature 6: User-Friendly Interface: Ensure a clean and intuitive user interface for easy navigation and data visualization.
-	Feature 7: Mobile Compatibility: Make the application mobile-responsive for users to access it on smartphones and tablets.
-	Feature 8: Data Sources: Integrate data from reliable financial data providers or APIs to ensure accuracy and reliability of the information.
-	Compliance: The application should comply with financial regulations and data privacy laws.
+                                                                                           *********************************************
+
+3. Nasdaq-100_front_end Folder :
+3.1. Introduction :
+   In this repository, you'll find the frontend of the Nasdaq-100 ETF Explorer Application. Our frontend is built using React.js, chosen for its component-based architecture. React.js's ability to manage stateful components and efficiently update the DOM makes it ideal for creating dynamic views, such as real-time stock charts and news updates. We utilize HTTP requests to retrieve stock data and market news from the Django backend, facilitating front-end to back-end communication. Finally, we've integrated Chart.js for its simplicity and effectiveness in creating interactive charts, crucial for representing financial data of TQQQ, SQQQ, and QQQ ETFs.
+
+3.2. Overview of system Component in Frontend (React.js) :
+This section provides an overview of all components of the front end of the  NASDAQ-100 ETF Explorer web application, each playing a specific role in the application's functionality.
+Frontend (ReactJS): Responsible for presenting the user interface, it handles user interactions and displays data fetched from the backend and below its components:
+•	Home.tsx : this is main landing page and it will display ChartTQQQ, ChartQQQ, ChartSQQQ and News component plus header and footer
+•	Aboutus.tsx: display information about the teams and web application 
+•	Etf_Information.tsx: Displays detailed information about various NASDAQ-100 ETFs.
+•	Educational_Resources.tsx: Offers educational material and resources for new investors.
+•	Contactus.tsx : A contact form for user inquiries.
+•	ChartQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the QQQ ETF Price 
+•	ChartTQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the TQQQ ETF Price 
+•	ChartSQQQ.tsx : specialized component that fetch stock price data then displaying interactive charts, specifically for the SQQQ ETF Price 
+•	News.tsx : it fetch news and  display the latest market news and updates relevant to NASDAQ-100 ETFs.
+•	App.tsx : serves as the root component in the React application for the NASDAQ-100 ETF Explorer. It is the main entry point for the application's user interface and is responsible for defining the routing structure.
+•	NotFound.tsx : Displayed when a user navigates to an undefined route or a non-existent page.
+•	PublicFolder : Contains static assets like images, fonts, and external scripts used in the application.
+
+3.3 UML Component Diagram : 
+To review the UML component diagram, please visit the following repository : https://github.com/Bouille-L/Web-App-UML-Diagram.git
+
+                                                                                         *********************************************
 
 
-8. Contributing: If you are open to contributions, explain how others can contribute to your project. This could include guidelines for submitting pull requests and how to report bugs.
+4. Installation Instructions: to install and set up this fron end locally, you need:
+This guide will help you set up and run Nasdaq-100 ETF Explorer Front end on your local machine for development and testing purposes.
 
-9. License: State the license under which your project is available. For example, MIT, GPL, Apache, etc. This informs users about how they can legally use your project.
+## Prerequisites
+Before beginning, ensure you have the following installed:
+- Node.js (latest stable version is recommended)
+- npm (usually comes with Node.js)
 
-10. Contact Information: If you want to provide a way for users to reach out with questions or feedback, include your contact information or a link to your social media or professional profile.
+## Cloning the Repository
+First, clone the project repository to your local machine:
+git clone https://github.com/Bouille-L/Nasdaq-100_front_end.git
+cd Nasdaq-100_front_end
 
-11. Screenshots/Demos: Adding screenshots or demos of your project makes your README more appealing and informative.
+##Installing Dependencies
+The project uses several npm packages. Install them by running: npm install
+This command will install all necessary dependencies as specified in the package.json file.
+
+##Running the Application
+To start the application on your local machine: npm run dev
+This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via [http://localhost:3000 ](http://localhost:5173/)
+
+##Key Dependencies
+The project uses key dependencies, including:
+React (react, react-dom)
+React Testing Libraries (@testing-library/react, @testing-library/jest-dom, etc.)
+TypeScript for type-checking (typescript)
+Babel for compiling JSX and ES6 (@babel/core, @babel/preset-env, etc.)
+Axios for making HTTP requests (axios)
+React Router for navigation (react-router-dom)
+Chart.js for data visualization (chart.js, react-chartjs-2)
+Cypress for end-to-end testing (cypress)
+Ensure that these dependencies are properly installed for the application to function correctly.
+
+##Troubleshooting:
+If, when you open the front end in your web browser, the Home page displays the message "Error: Error fetching data. Please try again" in the news and charts section, it may be due to either a lack of communication established with the back end or reaching the maximum API calls allowed for the day. This issue could be occurring because we are using a free API service.
+
+##For further questions or contributions, feel free to contact me via Github Channel.
+
+                                                                                                            *********************************************
+
+
+
+
