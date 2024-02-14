@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npx vite build",
     "preview": "vite preview",
-    "test": "jest"
+    "test": "jest",
+    "start": "npm run dev"
   },
   "dependencies": {
     "apexcharts": "^3.45.1",

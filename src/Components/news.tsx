@@ -20,7 +20,7 @@ const News: React.FC = () => {
       try {
         const timeZone = 'America/New_York'; // Specify the desired time zone
 
-        const response = await axios.get<NewsItem[]>(`http://127.0.0.1:8000/api/news/?timeZone=${timeZone}`);
+        const response = await axios.get<NewsItem[]>(`https://nasdaq-100-webapp-backend-bcf51f152084.herokuapp.com/api/news/?timeZone=${timeZone}`);
         setNewsData(response.data);
       } catch (error) {
         console.error('Error fetching news data:', error);

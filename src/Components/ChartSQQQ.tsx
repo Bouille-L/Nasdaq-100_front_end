@@ -20,7 +20,7 @@ const ChartSQQQ: React.FC = () => {
   const fetchChartData = async (range: string) => {
     setLoading(true);
     try {
-      let apiUrl = 'http://127.0.0.1:8000/api/SQQQ/';
+      let apiUrl = 'https://nasdaq-100-webapp-backend-bcf51f152084.herokuapp.com/api/SQQQ/';
 
       const timeZone = 'America/New_York'; // Specify the desired time zone consistently
 

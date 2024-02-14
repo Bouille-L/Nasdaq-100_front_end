@@ -25,7 +25,7 @@
     "moduleResolution": "Node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    // "noEmit": true, // Removed or set to false if you need TypeScript to emit JS files
     "jsx": "react"
   },
   "include": [

@@ -15,7 +15,7 @@ const ContactUs = () => {
     };
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/store_message/', {
+      const response = await fetch('https://nasdaq-100-webapp-backend-bcf51f152084.herokuapp.com/api/store_message/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
