@@ -78,6 +78,14 @@ To start the application on your local machine:
 
 This command will launch the React application, typically in your default web browser. If it doesn't open automatically, you can access it via http://localhost:5173/
 
+## Live Application
+
+The Nasdaq-100 ETFs Explorer is deployed and can be accessed at the following URL:
+
+[Nasdaq-100 ETFs Explorer](https://nasdaq-100-webapp-frontend-9efe14c7926a.herokuapp.com/)
+
+Feel free to visit the live application to explore its features without needing to set up a local development environment.
+
 ## Key Dependencies
 * The project uses key dependencies, including:
 * React (react, react-dom)
@@ -92,6 +100,7 @@ Ensure that these dependencies are properly installed for the application to fun
 
 ## Troubleshooting:
 If, when you open the front end in your web browser, the Home page displays the message "Error: Error fetching data. Please try again" in the news and charts section, it may be due to either a lack of communication established with the back end or reaching the maximum API calls allowed for the day. This issue could be occurring because we are using a free API service.
+
 
 ## For further questions or contributions, feel free to contact me via Github Channel.
 
